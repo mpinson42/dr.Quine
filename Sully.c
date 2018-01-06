@@ -8,7 +8,7 @@
 int main()
 {
 char c[46]="gcc -Wall -Werror -Wextra -o Sully_0 Sully_0.c";
-int i = 10;
+int i = 5;
 int fd;
 char a[10]="Sully_0.c";
 a[9] = 0;
