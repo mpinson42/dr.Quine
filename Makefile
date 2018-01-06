@@ -4,11 +4,11 @@ NAME2 = Grace
 
 NAME3 = Sully
 
-SRC = srcs/Colleen.c
+SRC = Colleen.c
 
-SRC2 = srcs/Grace.c
+SRC2 = Grace.c
 
-SRC3 = srcs/Sully.c
+SRC3 = Sully.c
 
 OBJ = Colleen.o
 
