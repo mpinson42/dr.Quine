@@ -24,6 +24,8 @@ all: $(NAME)
 $(NAME): $(SRC)
 	nasm -f macho64 -o $(OBJ) $(SRC)
 	ld $(OBJ) -o $(NAME) -macosx_version_min 10.8 -lSystem
+	nasm -f macho64 -o $(OBJ2) $(SRC2)
+	ld $(OBJ2) -o $(NAME2) -macosx_version_min 10.8 -lSystem
 	#gcc -o $(NAME2) $(SRC2)
 	#gcc -o $(NAME3) $(SRC3)
 
