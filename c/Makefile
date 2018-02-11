@@ -22,7 +22,6 @@ all: $(NAME)
 	gcc -c -o $@ $^
 
 $(NAME): $(SRC)
-	@echo "mpinson" > auteur
 	gcc -o $(NAME) $(SRC)
 	gcc -o $(NAME2) $(SRC2)
 	gcc -o $(NAME3) $(SRC3)
