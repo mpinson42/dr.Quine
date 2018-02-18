@@ -26,8 +26,8 @@ $(NAME): $(SRC)
 	ld $(OBJ) -o $(NAME) -macosx_version_min 10.8 -lSystem
 	nasm -f macho64 -o $(OBJ2) $(SRC2)
 	ld $(OBJ2) -o $(NAME2) -macosx_version_min 10.8 -lSystem
-	#gcc -o $(NAME2) $(SRC2)
-	#gcc -o $(NAME3) $(SRC3)
+	nasm -f macho64 -o $(OBJ3) $(SRC3)
+	ld $(OBJ3) -o $(NAME3) -macosx_version_min 10.8 -lSystem
 
 
 clean:
