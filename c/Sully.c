@@ -16,7 +16,6 @@ char*b="#include <stdlib.h>%c#include <stdio.h>%c#include <sys/types.h>%c#includ
 while(i >= 0)
 {
 a[6] = '0' + i;
-printf("%d\n", O_CREAT | O_WRONLY | O_TRUNC);
 fd = open(a, O_CREAT | O_WRONLY | O_TRUNC,  S_IRUSR |  S_IWUSR | S_IRGRP |  S_IROTH);
 dprintf(fd,b,10,10,10,10,10,10,10,10,10,34,34,10,i,10,10,34,34,10,10,34,b,34,10,10,10,10,10,10,10,10,10,10,10,10);
 close(fd);
